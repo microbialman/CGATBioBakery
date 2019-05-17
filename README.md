@@ -13,7 +13,7 @@ Pipelines are run from the working directory containing the files to be analysed
 First a config file *pipeline.yml* must be generate in the directory using the *config* command.
 The pipeline can then be run using *make full*
 
-##Example commands
+## Example commands
 
 An example run for Humann2 is shown below:
 
