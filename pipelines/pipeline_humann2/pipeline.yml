@@ -1,0 +1,25 @@
+################################################################
+#
+# Pipeline pipeline_humann2.py configuration file
+#
+################################################################
+
+# "true/false" flags will add or remove command flags if the option does not accept parameters 
+
+################################################################
+#
+# Humann2 options
+#
+################################################################
+
+Humann2:
+  #use to activate a venv before calling humann2. Set to false is it is installed in current environment
+  venv: "humann2"
+  threads: "10"
+  #per thread memory (Gb)
+  memory: "2"
+  #additional humann2 commands (as if calling directly)
+  commands: "--remove-temp-output"
+
+Normalisation:
+  units: "cpm"

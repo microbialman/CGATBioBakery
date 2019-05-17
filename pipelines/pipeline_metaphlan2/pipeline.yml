@@ -1,0 +1,56 @@
+################################################################
+#
+# Pipeline pipeline_metaphlan2.py configuration file
+#
+################################################################
+
+# "true/false" flags will add or remove command flags if the option does not accept parameters
+# "false" will return to defaults if option accepts parameters
+
+################################################################
+#
+# Metaphlan2 options (see Metaphlan2 documentation for details)
+#
+################################################################
+
+Metaphlan2:
+  #use to activate a venv before calling humann2. Set to false is it is installed in current environment
+  venv: "humann2"
+  #a for all
+  tax_lev: "a"
+  #analysis type rel_ab for relative abundances
+  t: "rel_ab"
+  #database location, required if not in default install location 
+  bowtie2db : "false"
+  index: "false"
+  bt2_ps: "false"
+  bowtie2_exe: "false"
+  bowtie2_build: "false"
+  #save bowtie intermediates
+  save_bowtie: "false"
+  min_cu_len: "false"
+  min_alignment_len: "false"
+  ignore_viruses: "false"
+  ignore_eukaryotes: "false"
+  ignore_bacteria: "false"
+  ignore_archaea: "false"
+  stat_q: "false"
+  ignore_markers: "false"
+  avoid_disqm: "false"
+  stat: "false"
+  #add all other commands here as if calling metaphlan2 directly
+  other: ""
+
+  tmp_dir: "/gfs/scratch"
+  threads: "10"
+  #per thread mem in gb
+  memory: "2"
+
+
+Merge:
+  #directory of Metaphlan merge table script
+  script: "/gfs/devel/majackson/CGATFlow/conda-install/envs/humann2/bin/merge_metaphlan_tables.py"
+
+Filter:
+  #comma seperated list of taxonomic levels to pull out of table
+  taxa: "kingdoms,phyla,classes,orders,families,genera,species"
