@@ -1,5 +1,5 @@
 # CGATBioBakery
-A series of pipelines for running tools from the **[bioBakery](https://bitbucket.org/biobakery/biobakery/wiki/Home)** collection developed by the Huttenhower lab within the  **[CGAT](https://github.com/cgat-developers/cgat-core)** framework.
+A series of pipelines for running tools (currently MetaPhlAn2 and HUMAnN2) from the **[bioBakery](https://bitbucket.org/biobakery/biobakery/wiki/Home)** collection developed by the Huttenhower lab within the  **[CGAT](https://github.com/cgat-developers/cgat-core)** framework.
 
 ## Installation
 
